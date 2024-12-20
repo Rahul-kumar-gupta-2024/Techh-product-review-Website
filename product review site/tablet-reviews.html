@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f3f6;
+        }
+        .navbar {
+            background-color: #1e45a0;
+            color: white;
+            padding: 15px;
+        }
+        .website-title {
+            background-color: #2874f0;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 2.5em;
+            font-weight: bold;
+            background-image: url(https://t4.ftcdn.net/jpg/03/88/34/91/240_F_388349109_Rq6f7ZqP7NKitbkCkdfm8sSJd1rnb9ls.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .product-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+            background-image: url(https://t4.ftcdn.net/jpg/03/88/34/91/240_F_388349109_Rq6f7ZqP7NKitbkCkdfm8sSJd1rnb9ls.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .product-box img {
+            max-width: 150px;
+            max-height: 150px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+        .product-box h3 {
+            color: #2874f0;
+        }
+        .product-box p {
+            color: gray;
+        }
+        .Review {
+            display: inline-block;
+            background-color: #ff9900;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .add-to-cart:hover {
+            background-color: #e68900;
+        }
+    </style>
+</head>
+<body>
+    <div class="website-title">
+        GadgetGrid-Laptops Review
+    </div>
+    <div class="navbar">
+        <a href="index2.html">Back to Home</a>
+    </div>
+
+    <h2 style="text-align:center; margin-top:20px;">Top Tablets</h2>
+    
+    <div class="product-grid">
+        
+        <div class="product-box">
+            <img src="https://m.media-amazon.com/images/I/618Acjb5AhL._SL1500_.jpg" alt="Tablet 1">
+            <h3>Samsung Galaxy Tab S9</h3>
+            <p>Powerful tablet with AMOLED display</p>
+            <a href="review.html" class="Review">Review</a>
+        </div>
+
+        <div class="product-box">
+            <img src="https://images-cdn.ubuy.co.in/64ee0931571e4004486b2951-2021-apple-11-inch-ipad-pro-wi-fi-128gb.jpg" alt="Tablet 2">
+            <h3>Apple iPad Pro</h3>
+            <p>Experience unmatched performance</p>
+            
+            <a href="review.html" class="Review">Review</a>
+        </div>
+
+        <div class="product-box">
+            <img src="https://p3-ofp.static.pub/fes/cms/2023/03/02/6w2avb386k4fd9wy3xxcsjgyp31ndz142776.png" alt="Tablet 3">
+            <h3>Lenovo Tab P12 Pro</h3>
+            <p>Perfect for work and entertainment</p>
+            
+            <a href="review.html" class="Review">Review</a>
+        </div>
+
+        <div class="product-box">
+            <img src="https://images-cdn.ubuy.co.in/66264df2d5f08a0b82476c21-microsoft-surface-go-2-tablet-10-5-4.jpg" alt="Tablet 4">
+            <h3>Microsoft Surface Go</h3>
+            <p>Flexible and ultra-portable</p>
+            
+            <a href="review.html" class="Review">Review</a>
+        </div>
+
+        <div class="product-box">
+            <img src="https://m.media-amazon.com/images/I/61NQmtKmcAS._AC_SY450_.jpg" alt="Tablet 5">
+            <h3>Amazon Fire HD 10</h3>
+            <p>Budget-friendly and versatile</p>
+            
+            <a href="review.html" class="Review">Review</a>
+        </div>
+
+        <div class="product-box">
+            <img src="https://m.media-amazon.com/images/I/61mbKKNjWiL._SX522_.jpg" alt="Tablet 6">
+            <h3>Xiaomi Pad 5</h3>
+            <p>Great value for money</p>
+            
+            <a href="review.html" class="Review">Review</a>
+        </div>
+    </div>
+</body>
+</html>

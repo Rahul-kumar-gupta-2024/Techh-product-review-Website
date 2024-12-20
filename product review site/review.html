@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            background-image: url(#);
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .review-form {
+            margin-bottom: 30px;
+        }
+        .review-form input, .review-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .review-form button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .review-form button:hover {
+            background-color: #0056b3;
+        }
+        .review-list {
+            margin-top: 20px;
+        }
+        .review-item {
+            padding: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .review-item:last-child {
+            border-bottom: none;
+        }
+        .review-title {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Product Reviews</h1>
+        <div class="review-form">
+            <h2>Leave a Review</h2>
+            <form id="reviewForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="text" id="product" placeholder="Product Name" required>
+                <textarea id="review" rows="5" placeholder="Write your review here..." required></textarea>
+                <button type="submit">Submit Review</button>
+            </form>
+        </div>
+        <div class="review-list">
+            <h2>All Reviews</h2>
+            <div id="reviews">
+               
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const reviewForm = document.getElementById('reviewForm');
+        const reviewsContainer = document.getElementById('reviews');
+
+        reviewForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+           
+            const name = document.getElementById('name').value;
+            const product = document.getElementById('product').value;
+            const review = document.getElementById('review').value;
+
+           
+            const reviewItem = document.createElement('div');
+            reviewItem.classList.add('review-item');
+            reviewItem.innerHTML = `
+                <p class="review-title">${name} reviewed ${product}</p>
+                <p>${review}</p>
+            `;
+
+           
+            reviewsContainer.appendChild(reviewItem);
+
+           
+            reviewForm.reset();
+        });
+    </script>
+</body>
+</html>
